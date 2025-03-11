@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryam's blogg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-cont"> 
+            <h1>Välkommen till min blogg</h1>
+            <img src="tech.png">
+        </div>
+    </header>
+    <div class="container">
+        
+        <nav class="navbar">
+            
+                <ul class="tabs">
+                    <li>
+                        <button class="tablink" onclick="openTab(event, 'home')">Hem</button>
+                    </li>
+                    <li>
+                        <button class="tablink" onclick="openTab(event, 'om')">Om bloggen</button>
+                    </li>
+                    <li>
+                        <button class="tablink" onclick="openTab(event, 'skapa')">Skapa inlägg</button>
+                    </li>
+                    <li>
+                        <button class="tablink" onclick="openTab(event, 'senaste')">Senaste inlägg</button>
+                    </li>
+                        
+                </ul>
+        </nav>
+        <main class="main">
+            <section id="home"  class="tabcontent">
+                <h2>Välkommen till TechTest Blogg</h2>
+                <p>Hej och välkommen till min blogg! 👋 Här kommer jag att dela med mig av mina erfarenheter, tips och guider inom Python-programmering, API-utveckling och frontend-webbutveckling.
+
+                    Om du är en aspirerande utvecklare, student eller någon som vill fördjupa sina kunskaper inom modern webbutveckling, så har du kommit helt rätt! </p>
+                
+            </section>
+            <section id="om"  class="tabcontent">
+                <h2>Om bloggen</h2>
+                <p>Denna blogg handlar om teknik,kodning och testning</p>
+                <p>Här hittar du inspirerande inlägg om mjukvaruutveckling och testning</p>
+                <p>Kolla in vår senaste inlägg och skriv kommentarer</p>
+            </section>
+            <section id = "skapa" class="tabcontent">
+                <h2>Skapa inlägg</h2>
+                <form>
+                    <div class="form-g">
+                        <p>Titel</p>
+                        <input type="text" id="titel" placeholder="Skriv en titel" required>
+                    </div>
+                    <div class="form-g">
+                        <p>Namn</p>
+                        <input type="text" id="namn" placeholder="Välj ett namn" required>
+                    </div>
+                    <div class="form-g">
+                        <p>Innehåll</p>
+                        <textarea id="innehåll" rows="6" placeholder="Skriv ett inlägget här" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" >Submit ditt inlägg</button>
+                
+                </form>
+            </section>
+            <section id="senaste" class="tabcontent">
+                <h2>Senaste inlägg</h2>
+                <p>Här kan du läsa de senaste blogginläggen</p>
+                <div id="senaste-posts"></div>
+
+            </section>
+            <section class="footer">
+
+            </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
